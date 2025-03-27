@@ -1,0 +1,144 @@
+# //  Questa Sim-64
+# //  Version 10.7c win64 Aug 18 2018
+# //
+# //  Copyright 1991-2018 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# vsim -voptargs="+acc" work.tb 
+# Start time: 01:07:09 on Mar 28,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: test.sv(33): (vopt-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# Loading sv_std.std
+# Loading work.tb_top_sv_unit(fast)
+# Loading work.tb(fast)
+# Loading work.rif(fast)
+# Loading work.reg_ctrl(fast)
+# Loading work.rif(fast)
+add wave -position insertpoint sim:/tb/dut/*
+run -all
+# ** Warning: (vsim-PLI-3826) $dumpfile : This task should be called prior to the $dumpvars
+# task.  The $dumpfile task will be ignored.
+#    Time: 0 ns  Iteration: 0  Process: /tb/#INITIAL#35 File: tb_top.sv Line: 37
+# [T=20] [TEST] Starting stimulus ...
+# [T=20] [DRIVER] waiting for item ...
+# [T=20] [MONITOR] starting ...
+# [T=30] [DRIVER] waiting for item ...
+# [T=30] [Driver] addr=0x31 wr=0x1 wdata=0x3114 rdata=0x0
+# [T=50] [DRIVER] waiting for item ...
+# [T=50] [Driver] addr=0xb1 wr=0x1 wdata=0xf99d rdata=0x0
+# [T=50] [Monitor] addr=0x31 wr=0x1 wdata=0x3114 rdata=0x0
+# [T=50] [Scoreboard] addr=0x31 wr=0x1 wdata=0x3114 rdata=0x0
+# [T=50] [SCOREBOARD] Store addr=0x31 wr=0x1 data=0x3114
+# [T=70] [Monitor] addr=0xb1 wr=0x1 wdata=0xf99d rdata=0x0
+# [T=70] [DRIVER] waiting for item ...
+# [T=70] [Driver] addr=0xe4 wr=0x0 wdata=0xe8a3 rdata=0x0
+# [T=70] [Scoreboard] addr=0xb1 wr=0x1 wdata=0xf99d rdata=0x0
+# [T=70] [SCOREBOARD] Store addr=0xb1 wr=0x1 data=0xf99d
+# [T=90] [DRIVER] waiting for item ...
+# [T=90] [Driver] addr=0x31 wr=0x1 wdata=0xa412 rdata=0x0
+# [T=110] [Monitor] addr=0xe4 wr=0x0 wdata=0xe8a3 rdata=0x1507
+# [T=110] [DRIVER] wait until ready is high
+# [T=110] [Scoreboard] addr=0xe4 wr=0x0 wdata=0xe8a3 rdata=0x1507
+# [T=110] [SCOREBOARD] [PASS] First time read, addr=0xe4 exp=16'h1507 act=0x1507
+# [T=130] [DRIVER] waiting for item ...
+# [T=130] [Driver] addr=0xd3 wr=0x1 wdata=0xc88b rdata=0x0
+# [T=130] [Monitor] addr=0x31 wr=0x1 wdata=0xa412 rdata=0x0
+# [T=130] [Scoreboard] addr=0x31 wr=0x1 wdata=0xa412 rdata=0x0
+# [T=130] [SCOREBOARD] Store addr=0x31 wr=0x1 data=0xa412
+# [T=150] [Monitor] addr=0xd3 wr=0x1 wdata=0xc88b rdata=0x0
+# [T=150] [DRIVER] waiting for item ...
+# [T=150] [Driver] addr=0x3f wr=0x1 wdata=0x200 rdata=0x0
+# [T=150] [Scoreboard] addr=0xd3 wr=0x1 wdata=0xc88b rdata=0x0
+# [T=150] [SCOREBOARD] Store addr=0xd3 wr=0x1 data=0xc88b
+# [T=170] [DRIVER] waiting for item ...
+# [T=170] [Driver] addr=0xdf wr=0x1 wdata=0xc366 rdata=0x0
+# [T=170] [Monitor] addr=0x3f wr=0x1 wdata=0x200 rdata=0x0
+# [T=170] [Scoreboard] addr=0x3f wr=0x1 wdata=0x200 rdata=0x0
+# [T=170] [SCOREBOARD] Store addr=0x3f wr=0x1 data=0x200
+# [T=190] [Monitor] addr=0xdf wr=0x1 wdata=0xc366 rdata=0x0
+# [T=190] [DRIVER] waiting for item ...
+# [T=190] [Driver] addr=0xd1 wr=0x1 wdata=0x8f53 rdata=0x0
+# [T=190] [Scoreboard] addr=0xdf wr=0x1 wdata=0xc366 rdata=0x0
+# [T=190] [SCOREBOARD] Store addr=0xdf wr=0x1 data=0xc366
+# [T=210] [DRIVER] waiting for item ...
+# [T=210] [Driver] addr=0x27 wr=0x1 wdata=0x1d92 rdata=0x0
+# [T=210] [Monitor] addr=0xd1 wr=0x1 wdata=0x8f53 rdata=0x0
+# [T=210] [Scoreboard] addr=0xd1 wr=0x1 wdata=0x8f53 rdata=0x0
+# [T=210] [SCOREBOARD] Store addr=0xd1 wr=0x1 data=0x8f53
+# [T=230] [Monitor] addr=0x27 wr=0x1 wdata=0x1d92 rdata=0x0
+# [T=230] [DRIVER] waiting for item ...
+# [T=230] [Driver] addr=0xbc wr=0x0 wdata=0x7ceb rdata=0x0
+# [T=230] [Scoreboard] addr=0x27 wr=0x1 wdata=0x1d92 rdata=0x0
+# [T=230] [SCOREBOARD] Store addr=0x27 wr=0x1 data=0x1d92
+# [T=250] [DRIVER] waiting for item ...
+# [T=250] [Driver] addr=0xcd wr=0x0 wdata=0x6090 rdata=0x0
+# [T=270] [Monitor] addr=0xbc wr=0x0 wdata=0x7ceb rdata=0x1507
+# [T=270] [DRIVER] wait until ready is high
+# [T=270] [Scoreboard] addr=0xbc wr=0x0 wdata=0x7ceb rdata=0x1507
+# [T=270] [SCOREBOARD] [PASS] First time read, addr=0xbc exp=16'h1507 act=0x1507
+# [T=290] [DRIVER] waiting for item ...
+# [T=290] [Driver] addr=0x85 wr=0x1 wdata=0x2bd8 rdata=0x0
+# [T=310] [Monitor] addr=0xcd wr=0x0 wdata=0x6090 rdata=0x1507
+# [T=310] [DRIVER] wait until ready is high
+# [T=310] [Scoreboard] addr=0xcd wr=0x0 wdata=0x6090 rdata=0x1507
+# [T=310] [SCOREBOARD] [PASS] First time read, addr=0xcd exp=16'h1507 act=0x1507
+# [T=330] [DRIVER] waiting for item ...
+# [T=330] [Driver] addr=0xa7 wr=0x1 wdata=0x6f6b rdata=0x0
+# [T=330] [Monitor] addr=0x85 wr=0x1 wdata=0x2bd8 rdata=0x0
+# [T=330] [Scoreboard] addr=0x85 wr=0x1 wdata=0x2bd8 rdata=0x0
+# [T=330] [SCOREBOARD] Store addr=0x85 wr=0x1 data=0x2bd8
+# [T=350] [Monitor] addr=0xa7 wr=0x1 wdata=0x6f6b rdata=0x0
+# [T=350] [DRIVER] waiting for item ...
+# [T=350] [Driver] addr=0x8e wr=0x0 wdata=0x3299 rdata=0x0
+# [T=350] [Scoreboard] addr=0xa7 wr=0x1 wdata=0x6f6b rdata=0x0
+# [T=350] [SCOREBOARD] Store addr=0xa7 wr=0x1 data=0x6f6b
+# [T=370] [DRIVER] waiting for item ...
+# [T=370] [Driver] addr=0xd8 wr=0x1 wdata=0xd643 rdata=0x0
+# [T=390] [Monitor] addr=0x8e wr=0x0 wdata=0x3299 rdata=0x1507
+# [T=390] [DRIVER] wait until ready is high
+# [T=390] [Scoreboard] addr=0x8e wr=0x0 wdata=0x3299 rdata=0x1507
+# [T=390] [SCOREBOARD] [PASS] First time read, addr=0x8e exp=16'h1507 act=0x1507
+# [T=410] [DRIVER] waiting for item ...
+# [T=410] [Driver] addr=0x94 wr=0x1 wdata=0xb902 rdata=0x0
+# [T=410] [Monitor] addr=0xd8 wr=0x1 wdata=0xd643 rdata=0x0
+# [T=410] [Scoreboard] addr=0xd8 wr=0x1 wdata=0xd643 rdata=0x0
+# [T=410] [SCOREBOARD] Store addr=0xd8 wr=0x1 data=0xd643
+# [T=430] [Monitor] addr=0x94 wr=0x1 wdata=0xb902 rdata=0x0
+# [T=430] [DRIVER] waiting for item ...
+# [T=430] [Driver] addr=0x50 wr=0x1 wdata=0xde79 rdata=0x0
+# [T=430] [Scoreboard] addr=0x94 wr=0x1 wdata=0xb902 rdata=0x0
+# [T=430] [SCOREBOARD] Store addr=0x94 wr=0x1 data=0xb902
+# [T=450] [DRIVER] waiting for item ...
+# [T=450] [Driver] addr=0xda wr=0x1 wdata=0x4bd5 rdata=0x0
+# [T=450] [Monitor] addr=0x50 wr=0x1 wdata=0xde79 rdata=0x0
+# [T=450] [Scoreboard] addr=0x50 wr=0x1 wdata=0xde79 rdata=0x0
+# [T=450] [SCOREBOARD] Store addr=0x50 wr=0x1 data=0xde79
+# [T=470] [Monitor] addr=0xda wr=0x1 wdata=0x4bd5 rdata=0x0
+# [T=470] [DRIVER] waiting for item ...
+# [T=470] [Driver] addr=0x70 wr=0x0 wdata=0x81c7 rdata=0x0
+# [T=470] [Scoreboard] addr=0xda wr=0x1 wdata=0x4bd5 rdata=0x0
+# [T=470] [SCOREBOARD] Store addr=0xda wr=0x1 data=0x4bd5
+# [T=490] [DRIVER] waiting for item ...
+# [T=490] [Driver] addr=0x88 wr=0x0 wdata=0xc88c rdata=0x0
+# [T=510] [Monitor] addr=0x70 wr=0x0 wdata=0x81c7 rdata=0x1507
+# [T=510] [DRIVER] wait until ready is high
+# [T=510] [Scoreboard] addr=0x70 wr=0x0 wdata=0x81c7 rdata=0x1507
+# [T=510] [SCOREBOARD] [PASS] First time read, addr=0x70 exp=16'h1507 act=0x1507
+# [T=530] [DRIVER] waiting for item ...
+# [T=550] [Monitor] addr=0x88 wr=0x0 wdata=0xc88c rdata=0x1507
+# [T=550] [Scoreboard] addr=0x88 wr=0x0 wdata=0xc88c rdata=0x1507
+# [T=550] [SCOREBOARD] [PASS] First time read, addr=0x88 exp=16'h1507 act=0x1507
+# ** Note: $finish    : tb_top.sv(32)
+#    Time: 1020 ns  Iteration: 0  Instance: /tb
+# 1
+# Break in Module tb at tb_top.sv line 32
+# End time: 01:09:54 on Mar 28,2025, Elapsed time: 0:02:45
+# Errors: 0, Warnings: 2
