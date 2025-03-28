@@ -1,0 +1,2 @@
+# Module switch
+This design functions as an address-based data sorter, directing data to the appropriate output. It can be applied in router systems, bus interfaces, or demultiplexers in digital signal processing systems.

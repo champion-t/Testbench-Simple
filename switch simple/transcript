@@ -1,0 +1,175 @@
+# vsim -c -voptargs="+acc" work.tb 
+# Start time: 14:43:45 on Mar 28,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: generator.sv(12): (vopt-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# //  Questa Sim-64
+# //  Version 10.7c win64 Aug 18 2018
+# //
+# //  Copyright 1991-2018 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.sif(fast)
+# Loading work.my_pkg(fast)
+# Loading work.tb(fast)
+# Loading work.sif(fast)
+# Loading work.switch(fast)
+# ** Warning: (vsim-PLI-3826) $dumpfile : This task should be called prior to the $dumpvars
+# task.  The $dumpfile task will be ignored.
+#    Time: 0 ns  Iteration: 0  Process: /tb/#INITIAL#35 File: tb_top.sv Line: 37
+# [T=20] [DRIVER] starting ...
+# [T=20] [MONITOR] starting ...
+# [T=20] [GENERATOR] Packet[1] Create next packet
+# [T=30] [DRIVER] waiting for packet ...
+# [T=30] [DRIVER] addr=0xfb data=0x78ad addr_a=0x0 data_a=0x0 addr_b=0x0 data_b=0x0
+# [T=50] [DRIVER] waiting for packet ...
+# [T=50] [MONITOR] Thread0 First part over
+# [T=50] [GENERATOR] Packet[2] Create next packet
+# [T=50] [DRIVER] addr=0xce data=0x6676 addr_a=0x0 data_a=0x0 addr_b=0x0 data_b=0x0
+# [T=70] [DRIVER] waiting for packet ...
+# [T=70] [MONITOR] Thread0 Second part over
+# [T=70] [MONITOR_Thread0] addr=0xfb data=0x78ad addr_a=0x0 data_a=0x0 addr_b=0xfb data_b=0x78ad
+# [T=70] [GENERATOR] Packet[3] Create next packet
+# [T=70] [MONITOR] Thread1 First part over
+# [T=70] [SCOREBOARD] [PASS] Match addr=0xfb addr_b=0xfb data=0x78ad data_b=0x78ad
+# [T=70] [DRIVER] addr=0xc0 data=0x69be addr_a=0x0 data_a=0x0 addr_b=0x0 data_b=0x0
+# [T=90] [DRIVER] waiting for packet ...
+# [T=90] [MONITOR] Thread1 Second part over
+# [T=90] [MONITOR_Thread1] addr=0xce data=0x6676 addr_a=0x0 data_a=0x0 addr_b=0xce data_b=0x6676
+# [T=90] [MONITOR] Thread0 First part over
+# [T=90] [GENERATOR] Packet[4] Create next packet
+# [T=90] [SCOREBOARD] [PASS] Match addr=0xce addr_b=0xce data=0x6676 data_b=0x6676
+# [T=90] [DRIVER] addr=0x36 data=0x317 addr_a=0x0 data_a=0x0 addr_b=0x0 data_b=0x0
+# [T=110] [DRIVER] waiting for packet ...
+# [T=110] [MONITOR] Thread0 Second part over
+# [T=110] [MONITOR_Thread0] addr=0xc0 data=0x69be addr_a=0x0 data_a=0x0 addr_b=0xc0 data_b=0x69be
+# [T=110] [MONITOR] Thread1 First part over
+# [T=110] [GENERATOR] Packet[5] Create next packet
+# [T=110] [SCOREBOARD] [PASS] Match addr=0xc0 addr_b=0xc0 data=0x69be data_b=0x69be
+# [T=110] [DRIVER] addr=0x71 data=0x16ba addr_a=0x0 data_a=0x0 addr_b=0x0 data_b=0x0
+# [T=130] [DRIVER] waiting for packet ...
+# [T=130] [MONITOR] Thread1 Second part over
+# [T=130] [MONITOR_Thread1] addr=0x36 data=0x317 addr_a=0x36 data_a=0x317 addr_b=0x0 data_b=0x0
+# [T=130] [MONITOR] Thread0 First part over
+# [T=130] [GENERATOR] Packet[6] Create next packet
+# [T=130] [SCOREBOARD] [PASS] Match addr=0x36 addr_a=0x36 data=0x317 data_a=0x317
+# [T=130] [DRIVER] addr=0x6e data=0x23f4 addr_a=0x0 data_a=0x0 addr_b=0x0 data_b=0x0
+# [T=150] [DRIVER] waiting for packet ...
+# [T=150] [MONITOR] Thread0 Second part over
+# [T=150] [MONITOR_Thread0] addr=0x71 data=0x16ba addr_a=0x0 data_a=0x0 addr_b=0x71 data_b=0x16ba
+# [T=150] [MONITOR] Thread1 First part over
+# [T=150] [GENERATOR] Packet[7] Create next packet
+# [T=150] [SCOREBOARD] [PASS] Match addr=0x71 addr_b=0x71 data=0x16ba data_b=0x16ba
+# [T=150] [DRIVER] addr=0x47 data=0x4fb2 addr_a=0x0 data_a=0x0 addr_b=0x0 data_b=0x0
+# [T=170] [DRIVER] waiting for packet ...
+# [T=170] [MONITOR] Thread1 Second part over
+# [T=170] [MONITOR_Thread1] addr=0x6e data=0x23f4 addr_a=0x0 data_a=0x0 addr_b=0x6e data_b=0x23f4
+# [T=170] [MONITOR] Thread0 First part over
+# [T=170] [GENERATOR] Packet[8] Create next packet
+# [T=170] [SCOREBOARD] [PASS] Match addr=0x6e addr_b=0x6e data=0x23f4 data_b=0x23f4
+# [T=170] [DRIVER] addr=0xbb data=0xcd69 addr_a=0x0 data_a=0x0 addr_b=0x0 data_b=0x0
+# [T=190] [DRIVER] waiting for packet ...
+# [T=190] [MONITOR] Thread0 Second part over
+# [T=190] [MONITOR_Thread0] addr=0x47 data=0x4fb2 addr_a=0x0 data_a=0x0 addr_b=0x47 data_b=0x4fb2
+# [T=190] [MONITOR] Thread1 First part over
+# [T=190] [GENERATOR] Packet[9] Create next packet
+# [T=190] [SCOREBOARD] [PASS] Match addr=0x47 addr_b=0x47 data=0x4fb2 data_b=0x4fb2
+# [T=190] [DRIVER] addr=0x35 data=0x9e58 addr_a=0x0 data_a=0x0 addr_b=0x0 data_b=0x0
+# [T=210] [DRIVER] waiting for packet ...
+# [T=210] [MONITOR] Thread1 Second part over
+# [T=210] [MONITOR_Thread1] addr=0xbb data=0xcd69 addr_a=0x0 data_a=0x0 addr_b=0xbb data_b=0xcd69
+# [T=210] [MONITOR] Thread0 First part over
+# [T=210] [GENERATOR] Packet[10] Create next packet
+# [T=210] [SCOREBOARD] [PASS] Match addr=0xbb addr_b=0xbb data=0xcd69 data_b=0xcd69
+# [T=210] [DRIVER] addr=0x49 data=0xd196 addr_a=0x0 data_a=0x0 addr_b=0x0 data_b=0x0
+# [T=230] [DRIVER] waiting for packet ...
+# [T=230] [MONITOR] Thread0 Second part over
+# [T=230] [MONITOR_Thread0] addr=0x35 data=0x9e58 addr_a=0x35 data_a=0x9e58 addr_b=0x0 data_b=0x0
+# [T=230] [MONITOR] Thread1 First part over
+# [T=230] [GENERATOR] Packet[11] Create next packet
+# [T=230] [SCOREBOARD] [PASS] Match addr=0x35 addr_a=0x35 data=0x9e58 data_a=0x9e58
+# [T=230] [DRIVER] addr=0xca data=0x1207 addr_a=0x0 data_a=0x0 addr_b=0x0 data_b=0x0
+# [T=250] [DRIVER] waiting for packet ...
+# [T=250] [MONITOR] Thread1 Second part over
+# [T=250] [MONITOR_Thread1] addr=0x49 data=0xd196 addr_a=0x0 data_a=0x0 addr_b=0x49 data_b=0xd196
+# [T=250] [MONITOR] Thread0 First part over
+# [T=250] [GENERATOR] Packet[12] Create next packet
+# [T=250] [SCOREBOARD] [PASS] Match addr=0x49 addr_b=0x49 data=0xd196 data_b=0xd196
+# [T=250] [DRIVER] addr=0x5b data=0x1d5b addr_a=0x0 data_a=0x0 addr_b=0x0 data_b=0x0
+# [T=270] [DRIVER] waiting for packet ...
+# [T=270] [MONITOR] Thread0 Second part over
+# [T=270] [MONITOR_Thread0] addr=0xca data=0x1207 addr_a=0x0 data_a=0x0 addr_b=0xca data_b=0x1207
+# [T=270] [MONITOR] Thread1 First part over
+# [T=270] [GENERATOR] Packet[13] Create next packet
+# [T=270] [SCOREBOARD] [PASS] Match addr=0xca addr_b=0xca data=0x1207 data_b=0x1207
+# [T=270] [DRIVER] addr=0xbc data=0x2688 addr_a=0x0 data_a=0x0 addr_b=0x0 data_b=0x0
+# [T=290] [DRIVER] waiting for packet ...
+# [T=290] [MONITOR] Thread1 Second part over
+# [T=290] [MONITOR_Thread1] addr=0x5b data=0x1d5b addr_a=0x0 data_a=0x0 addr_b=0x5b data_b=0x1d5b
+# [T=290] [MONITOR] Thread0 First part over
+# [T=290] [GENERATOR] Packet[14] Create next packet
+# [T=290] [SCOREBOARD] [PASS] Match addr=0x5b addr_b=0x5b data=0x1d5b data_b=0x1d5b
+# [T=290] [DRIVER] addr=0x97 data=0x559d addr_a=0x0 data_a=0x0 addr_b=0x0 data_b=0x0
+# [T=310] [DRIVER] waiting for packet ...
+# [T=310] [MONITOR] Thread0 Second part over
+# [T=310] [MONITOR_Thread0] addr=0xbc data=0x2688 addr_a=0x0 data_a=0x0 addr_b=0xbc data_b=0x2688
+# [T=310] [MONITOR] Thread1 First part over
+# [T=310] [GENERATOR] Packet[15] Create next packet
+# [T=310] [SCOREBOARD] [PASS] Match addr=0xbc addr_b=0xbc data=0x2688 data_b=0x2688
+# [T=310] [DRIVER] addr=0x3c data=0xe700 addr_a=0x0 data_a=0x0 addr_b=0x0 data_b=0x0
+# [T=330] [DRIVER] waiting for packet ...
+# [T=330] [MONITOR] Thread1 Second part over
+# [T=330] [MONITOR_Thread1] addr=0x97 data=0x559d addr_a=0x0 data_a=0x0 addr_b=0x97 data_b=0x559d
+# [T=330] [MONITOR] Thread0 First part over
+# [T=330] [GENERATOR] Packet[16] Create next packet
+# [T=330] [SCOREBOARD] [PASS] Match addr=0x97 addr_b=0x97 data=0x559d data_b=0x559d
+# [T=330] [DRIVER] addr=0x79 data=0x5f5f addr_a=0x0 data_a=0x0 addr_b=0x0 data_b=0x0
+# [T=350] [DRIVER] waiting for packet ...
+# [T=350] [MONITOR] Thread0 Second part over
+# [T=350] [MONITOR_Thread0] addr=0x3c data=0xe700 addr_a=0x3c data_a=0xe700 addr_b=0x0 data_b=0x0
+# [T=350] [MONITOR] Thread1 First part over
+# [T=350] [GENERATOR] Packet[17] Create next packet
+# [T=350] [SCOREBOARD] [PASS] Match addr=0x3c addr_a=0x3c data=0xe700 data_a=0xe700
+# [T=350] [DRIVER] addr=0x63 data=0xd727 addr_a=0x0 data_a=0x0 addr_b=0x0 data_b=0x0
+# [T=370] [DRIVER] waiting for packet ...
+# [T=370] [MONITOR] Thread1 Second part over
+# [T=370] [MONITOR_Thread1] addr=0x79 data=0x5f5f addr_a=0x0 data_a=0x0 addr_b=0x79 data_b=0x5f5f
+# [T=370] [MONITOR] Thread0 First part over
+# [T=370] [GENERATOR] Packet[18] Create next packet
+# [T=370] [SCOREBOARD] [PASS] Match addr=0x79 addr_b=0x79 data=0x5f5f data_b=0x5f5f
+# [T=370] [DRIVER] addr=0x3 data=0x770e addr_a=0x0 data_a=0x0 addr_b=0x0 data_b=0x0
+# [T=390] [DRIVER] waiting for packet ...
+# [T=390] [MONITOR] Thread0 Second part over
+# [T=390] [MONITOR_Thread0] addr=0x63 data=0xd727 addr_a=0x0 data_a=0x0 addr_b=0x63 data_b=0xd727
+# [T=390] [MONITOR] Thread1 First part over
+# [T=390] [GENERATOR] Packet[19] Create next packet
+# [T=390] [SCOREBOARD] [PASS] Match addr=0x63 addr_b=0x63 data=0xd727 data_b=0xd727
+# [T=390] [DRIVER] addr=0xab data=0x489a addr_a=0x0 data_a=0x0 addr_b=0x0 data_b=0x0
+# [T=410] [DRIVER] waiting for packet ...
+# [T=410] [MONITOR] Thread1 Second part over
+# [T=410] [MONITOR_Thread1] addr=0x3 data=0x770e addr_a=0x3 data_a=0x770e addr_b=0x0 data_b=0x0
+# [T=410] [MONITOR] Thread0 First part over
+# [T=410] [GENERATOR] Packet[20] Create next packet
+# [T=410] [SCOREBOARD] [PASS] Match addr=0x3 addr_a=0x3 data=0x770e data_a=0x770e
+# [T=410] [DRIVER] addr=0x63 data=0x2527 addr_a=0x0 data_a=0x0 addr_b=0x0 data_b=0x0
+# [T=430] [DRIVER] waiting for packet ...
+# [T=430] [MONITOR] Thread0 Second part over
+# [T=430] [MONITOR_Thread0] addr=0xab data=0x489a addr_a=0x0 data_a=0x0 addr_b=0xab data_b=0x489a
+# [T=430] [MONITOR] Thread1 First part over
+# [T=430] [GENERATOR] Done generator of 20 packets
+# [T=430] [SCOREBOARD] [PASS] Match addr=0xab addr_b=0xab data=0x489a data_b=0x489a
+# [T=450] [MONITOR] Thread1 Second part over
+# [T=450] [MONITOR_Thread1] addr=0x63 data=0x2527 addr_a=0x0 data_a=0x0 addr_b=0x63 data_b=0x2527
+# [T=450] [SCOREBOARD] [PASS] Match addr=0x63 addr_b=0x63 data=0x2527 data_b=0x2527
+# ** Note: $finish    : tb_top.sv(32)
+#    Time: 480 ns  Iteration: 0  Instance: /tb
+# End time: 14:44:24 on Mar 28,2025, Elapsed time: 0:00:39
+# Errors: 0, Warnings: 2
