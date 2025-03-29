@@ -1,0 +1,27 @@
+$date
+	Sat Mar 29 13:30:00 2025
+$end
+$version
+	QuestaSim Version 10.7c
+$end
+$timescale
+	1ns
+$end
+
+$scope module tb $end
+$var reg 1 ! clk $end
+
+$scope module dut $end
+$upscope $end
+$upscope $end
+
+$scope begin pkg $end
+$upscope $end
+
+$scope begin std $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+x!
+$end

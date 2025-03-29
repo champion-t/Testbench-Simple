@@ -1,0 +1,164 @@
+# //  Questa Sim-64
+# //  Version 10.7c win64 Aug 18 2018
+# //
+# //  Copyright 1991-2018 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# vsim -voptargs="+acc" work.tb 
+# Start time: 13:29:42 on Mar 29,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: generator.sv(12): (vopt-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# Loading sv_std.std
+# Loading work.aif(fast)
+# Loading work.aclk(fast)
+# Loading work.pkg(fast)
+# Loading work.tb(fast)
+# Loading work.aclk(fast)
+# Loading work.aif(fast)
+# Loading work.adder(fast)
+add wave -position insertpoint  \
+sim:/tb/tif/rstn \
+sim:/tb/tif/a \
+sim:/tb/tif/b \
+sim:/tb/tif/sum \
+sim:/tb/tif/carry
+add wave -position insertpoint  \
+sim:/tb/tclk/clk
+run -all
+# [T=0] [GENERATOR] Packet[1] create next packet
+# [T=0] [GENERATOR] Wait for driver to bo done
+# [T=0] [DRIVER] starting ...
+# [T=0] [DRIVER] waiting for packet ...
+# [T=0] [MONITOR] starting ...
+# ** Warning: (vsim-PLI-3826) $dumpfile : This task should be called prior to the $dumpvars
+# task.  The $dumpfile task will be ignored.
+#    Time: 0 ns  Iteration: 0  Process: /tb/#INITIAL#19 File: tb_top.sv Line: 21
+# [T=10] [[MONITOR]] a=0x0 b=0x0 sum=0x0 carry=0x0
+# [T=10] [[DRIVER]] a=0x58 b=0x9f sum=0x0 carry=0x0
+# [T=10] [DRIVER] waiting for packet ...
+# [T=10] [[SCOREBOARD]] a=0x0 b=0x0 sum=0x0 carry=0x0
+# [T=10] [SCOREBOARD] [PASS] Carry match ref_pkt=0x0 pkt=0x0
+# [T=10] [SCOREBOARD] [PASS] Sum match ref_pkt=0x0 pkt=0x0
+# [T=10] [GENERATOR] Packet[2] create next packet
+# [T=10] [GENERATOR] Wait for driver to bo done
+# [T=30] [[DRIVER]] a=0x82 b=0x89 sum=0x0 carry=0x0
+# [T=30] [DRIVER] waiting for packet ...
+# [T=30] [[MONITOR]] a=0x58 b=0x9f sum=0xf7 carry=0x0
+# [T=30] [GENERATOR] Packet[3] create next packet
+# [T=30] [GENERATOR] Wait for driver to bo done
+# [T=30] [[SCOREBOARD]] a=0x58 b=0x9f sum=0xf7 carry=0x0
+# [T=30] [SCOREBOARD] [PASS] Carry match ref_pkt=0x0 pkt=0x0
+# [T=30] [SCOREBOARD] [PASS] Sum match ref_pkt=0xf7 pkt=0xf7
+# [T=50] [[DRIVER]] a=0x9c b=0x64 sum=0x0 carry=0x0
+# [T=50] [DRIVER] waiting for packet ...
+# [T=50] [[MONITOR]] a=0x82 b=0x89 sum=0x10b carry=0x0
+# [T=50] [GENERATOR] Packet[4] create next packet
+# [T=50] [GENERATOR] Wait for driver to bo done
+# [T=50] [[SCOREBOARD]] a=0x82 b=0x89 sum=0x10b carry=0x0
+# [T=50] [SCOREBOARD] [PASS] Carry match ref_pkt=0x0 pkt=0x0
+# [T=50] [SCOREBOARD] [PASS] Sum match ref_pkt=0x10b pkt=0x10b
+# [T=70] [[DRIVER]] a=0x9b b=0xff sum=0x0 carry=0x0
+# [T=70] [DRIVER] waiting for packet ...
+# [T=70] [[MONITOR]] a=0x9c b=0x64 sum=0x100 carry=0x0
+# [T=70] [GENERATOR] Packet[5] create next packet
+# [T=70] [GENERATOR] Wait for driver to bo done
+# [T=70] [[SCOREBOARD]] a=0x9c b=0x64 sum=0x100 carry=0x0
+# [T=70] [SCOREBOARD] [PASS] Carry match ref_pkt=0x0 pkt=0x0
+# [T=70] [SCOREBOARD] [PASS] Sum match ref_pkt=0x100 pkt=0x100
+# [T=90] [[DRIVER]] a=0xca b=0xee sum=0x0 carry=0x0
+# [T=90] [DRIVER] waiting for packet ...
+# [T=90] [[MONITOR]] a=0x9b b=0xff sum=0x19a carry=0x0
+# [T=90] [GENERATOR] Packet[6] create next packet
+# [T=90] [GENERATOR] Wait for driver to bo done
+# [T=90] [[SCOREBOARD]] a=0x9b b=0xff sum=0x19a carry=0x0
+# [T=90] [SCOREBOARD] [PASS] Carry match ref_pkt=0x0 pkt=0x0
+# [T=90] [SCOREBOARD] [PASS] Sum match ref_pkt=0x19a pkt=0x19a
+# [T=110] [[DRIVER]] a=0x17 b=0x4f sum=0x0 carry=0x0
+# [T=110] [DRIVER] waiting for packet ...
+# [T=110] [[MONITOR]] a=0xca b=0xee sum=0x0 carry=0x0
+# [T=110] [GENERATOR] Packet[7] create next packet
+# [T=110] [GENERATOR] Wait for driver to bo done
+# [T=110] [[SCOREBOARD]] a=0xca b=0xee sum=0x0 carry=0x0
+# [T=110] [SCOREBOARD] [PASS] Carry match ref_pkt=0x0 pkt=0x0
+# [T=110] [SCOREBOARD] [PASS] Sum match ref_pkt=0x0 pkt=0x0
+# [T=130] [[DRIVER]] a=0x8f b=0xa2 sum=0x0 carry=0x0
+# [T=130] [DRIVER] waiting for packet ...
+# [T=130] [[MONITOR]] a=0x17 b=0x4f sum=0x66 carry=0x0
+# [T=130] [GENERATOR] Packet[8] create next packet
+# [T=130] [GENERATOR] Wait for driver to bo done
+# [T=130] [[SCOREBOARD]] a=0x17 b=0x4f sum=0x66 carry=0x0
+# [T=130] [SCOREBOARD] [PASS] Carry match ref_pkt=0x0 pkt=0x0
+# [T=130] [SCOREBOARD] [PASS] Sum match ref_pkt=0x66 pkt=0x66
+# [T=150] [[DRIVER]] a=0x8 b=0x9a sum=0x0 carry=0x0
+# [T=150] [DRIVER] waiting for packet ...
+# [T=150] [[MONITOR]] a=0x8f b=0xa2 sum=0x131 carry=0x0
+# [T=150] [GENERATOR] Packet[9] create next packet
+# [T=150] [GENERATOR] Wait for driver to bo done
+# [T=150] [[SCOREBOARD]] a=0x8f b=0xa2 sum=0x131 carry=0x0
+# [T=150] [SCOREBOARD] [PASS] Carry match ref_pkt=0x0 pkt=0x0
+# [T=150] [SCOREBOARD] [PASS] Sum match ref_pkt=0x131 pkt=0x131
+# [T=170] [[DRIVER]] a=0xf6 b=0x28 sum=0x0 carry=0x0
+# [T=170] [DRIVER] waiting for packet ...
+# [T=170] [[MONITOR]] a=0x8 b=0x9a sum=0x0 carry=0x0
+# [T=170] [GENERATOR] Packet[10] create next packet
+# [T=170] [GENERATOR] Wait for driver to bo done
+# [T=170] [[SCOREBOARD]] a=0x8 b=0x9a sum=0x0 carry=0x0
+# [T=170] [SCOREBOARD] [PASS] Carry match ref_pkt=0x0 pkt=0x0
+# [T=170] [SCOREBOARD] [PASS] Sum match ref_pkt=0x0 pkt=0x0
+# [T=190] [[DRIVER]] a=0x55 b=0x64 sum=0x0 carry=0x0
+# [T=190] [DRIVER] waiting for packet ...
+# [T=190] [[MONITOR]] a=0xf6 b=0x28 sum=0x11e carry=0x0
+# [T=190] [[SCOREBOARD]] a=0xf6 b=0x28 sum=0x11e carry=0x0
+# [T=190] [SCOREBOARD] [PASS] Carry match ref_pkt=0x0 pkt=0x0
+# [T=190] [SCOREBOARD] [PASS] Sum match ref_pkt=0x11e pkt=0x11e
+# [T=210] [[MONITOR]] a=0x55 b=0x64 sum=0x0 carry=0x0
+# [T=210] [[SCOREBOARD]] a=0x55 b=0x64 sum=0x0 carry=0x0
+# [T=210] [SCOREBOARD] [PASS] Carry match ref_pkt=0x0 pkt=0x0
+# [T=210] [SCOREBOARD] [PASS] Sum match ref_pkt=0x0 pkt=0x0
+# [T=230] [[MONITOR]] a=0x55 b=0x64 sum=0x0 carry=0x0
+# [T=230] [[SCOREBOARD]] a=0x55 b=0x64 sum=0x0 carry=0x0
+# [T=230] [SCOREBOARD] [PASS] Carry match ref_pkt=0x0 pkt=0x0
+# [T=230] [SCOREBOARD] [PASS] Sum match ref_pkt=0x0 pkt=0x0
+# [T=250] [[MONITOR]] a=0x55 b=0x64 sum=0x0 carry=0x0
+# [T=250] [[SCOREBOARD]] a=0x55 b=0x64 sum=0x0 carry=0x0
+# [T=250] [SCOREBOARD] [PASS] Carry match ref_pkt=0x0 pkt=0x0
+# [T=250] [SCOREBOARD] [PASS] Sum match ref_pkt=0x0 pkt=0x0
+# [T=270] [[MONITOR]] a=0x55 b=0x64 sum=0x0 carry=0x0
+# [T=270] [[SCOREBOARD]] a=0x55 b=0x64 sum=0x0 carry=0x0
+# [T=270] [SCOREBOARD] [PASS] Carry match ref_pkt=0x0 pkt=0x0
+# [T=270] [SCOREBOARD] [PASS] Sum match ref_pkt=0x0 pkt=0x0
+# [T=290] [[MONITOR]] a=0x55 b=0x64 sum=0x0 carry=0x0
+# [T=290] [[SCOREBOARD]] a=0x55 b=0x64 sum=0x0 carry=0x0
+# [T=290] [SCOREBOARD] [PASS] Carry match ref_pkt=0x0 pkt=0x0
+# [T=290] [SCOREBOARD] [PASS] Sum match ref_pkt=0x0 pkt=0x0
+# [T=310] [[MONITOR]] a=0x55 b=0x64 sum=0x0 carry=0x0
+# [T=310] [[SCOREBOARD]] a=0x55 b=0x64 sum=0x0 carry=0x0
+# [T=310] [SCOREBOARD] [PASS] Carry match ref_pkt=0x0 pkt=0x0
+# [T=310] [SCOREBOARD] [PASS] Sum match ref_pkt=0x0 pkt=0x0
+# [T=330] [[MONITOR]] a=0x55 b=0x64 sum=0x0 carry=0x0
+# [T=330] [[SCOREBOARD]] a=0x55 b=0x64 sum=0x0 carry=0x0
+# [T=330] [SCOREBOARD] [PASS] Carry match ref_pkt=0x0 pkt=0x0
+# [T=330] [SCOREBOARD] [PASS] Sum match ref_pkt=0x0 pkt=0x0
+# [T=350] [[MONITOR]] a=0x55 b=0x64 sum=0x0 carry=0x0
+# [T=350] [[SCOREBOARD]] a=0x55 b=0x64 sum=0x0 carry=0x0
+# [T=350] [SCOREBOARD] [PASS] Carry match ref_pkt=0x0 pkt=0x0
+# [T=350] [SCOREBOARD] [PASS] Sum match ref_pkt=0x0 pkt=0x0
+# [T=370] [[MONITOR]] a=0x55 b=0x64 sum=0x0 carry=0x0
+# [T=370] [[SCOREBOARD]] a=0x55 b=0x64 sum=0x0 carry=0x0
+# [T=370] [SCOREBOARD] [PASS] Carry match ref_pkt=0x0 pkt=0x0
+# [T=370] [SCOREBOARD] [PASS] Sum match ref_pkt=0x0 pkt=0x0
+# ** Note: $finish    : tb_top.sv(16)
+#    Time: 390 ns  Iteration: 0  Instance: /tb
+# 1
+# Break in Module tb at tb_top.sv line 16
+# Causality operation skipped due to absence of debug database file
+# End time: 13:32:40 on Mar 29,2025, Elapsed time: 0:02:58
+# Errors: 0, Warnings: 3
